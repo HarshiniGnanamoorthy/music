@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../all.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="../jquery.js"></script>
+    <title>Music store website</title>
+</head>
+<body>
+
+<!-- header section start -->
+
+<header>
+
+<nav>
+  <ul>
+    <li><a href="#home">home</a></li>
+    <li><a href="#feature">features</a></li>
+    <li><a href="#gallery">gallery</a></li>
+    <li><a href="#contact">contact</a></li>
+    
+  </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+<div class="logo">
+  <a href="#"><h1><span>be</span>music</h1></a>
+</div>
+
+</header>
+
+<!-- header section end -->
+
+
+<!-- home sectin starts -->
+
+<section id="home">
+
+<h1>where words fails music speaks!!</h1>
+
+
+
+<div class="icons">
+  <a href="#" class="fab fa-facebook"></a>
+  <a href="#" class="fab fa-twitter"></a>
+  <a href="#" class="fab fa-github"></a>
+  <a href="#" class="fab fa-pinterest"></a>
+</div>
+
+<div class="image">
+<img src="header.png" alt="">
+</div>
+
+</section>
+
+<!-- home sectin ends -->
+
+<!-- feature section starts -->
+
+<section id="feature">
+
+<h1>feature</h1>
+
+<div class="card-container">
+
+<div class="card">
+  <img src="images/ship.jpg" alt="">
+  <div class="content">
+    <h1>Free Shipping</h1>
+    <p>Free Shipping on all products irrespective of their cost and place to be delivered!</p>
+     <a href="#"><button>learn more</button></a>
+      </div>
+</div>
+
+<div class="card">
+  <img src="images/back.png" alt="">
+  <div class="content">
+    <h1>Money Back Guarantee</h1>
+    <p>We give your money if you are not satisfied with our products within 10 days of purchase!</p>
+    <a href="#"><button>learn more</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="images/cst.jpg" alt="">
+  <div class="content">
+    <h1>Customer Support</h1>
+    <p>We provide 24*7 services across the country through customer care toll free number!</p>
+    <a href="#"><button>learn more</button></a>
+  </div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- feature section ends -->
+
+
+
+<!-- gallery section starts -->
+
+<section id="gallery">
+
+  <h1>our latest products</h1>
+
+<div class="image-container">
+
+  <div class="image">
+    <img src="images/1.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>view more!</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="images/2.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>view more!</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="images/3.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>view more!</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="images/4.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>view more!</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="images/5.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>view more!</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="images/6.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>view more!</button></a>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- gallery section ends -->
+
+
+
+<!-- contact us section starts -->
+
+<section id="contact">
+
+  <form action="">
+    <h1>get in touch</h1>
+    <input type="text" placeholder="full name">
+    <input type="email" placeholder="e-mail">
+    <input type="number" placeholder="phone">
+    <textarea placeholder="message" cols="30" rows="10"></textarea>
+    <input type="submit" value="send">
+  </form>
+
+  <div class="image">
+    <img src="images/contact.jpg" alt="">
+  </div>
+
+</section>
+
+<!-- contact us section ends -->
+
+
+<!-- footer sectin starts -->
+
+<section id="footer">
+
+  <div class="footer-container">
+
+    <div class="brand">
+      <div class="logo">
+        <a href="#"><h1><span>be</span>music</h1></a>
+      </div>
+      <div class="icons">
+        <a href="#" class="fab fa-facebook" data-text="facebook"></a><br>
+        <a href="#" class="fab fa-twitter" data-text="twitter"></a><br>
+        <a href="#" class="fab fa-pinterest" data-text="pinterest"></a>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div class="info">
+        <a href="#" class="fas fa-map-marker-alt" data-text="be music"></a>
+        <a href="#" class="fas fa-envelope" data-text="bemusic@gmail.com"></a>
+        <a href="#" class="fas fa-phone" data-text="+919988774455"></a>
+      </div>
+    </div>
+
+   
+  </div>
+</section>
+<!-- footer sectin ends -->
+
+
+<!-- script starts -->
+<script>
+  $(document).ready(function(){
+
+    $('.fa-bars').click(function(){
+      $(this).toggleClass('fa-times');
+      $('nav').toggleClass('nav-toggle');
+    });
+
+    $('nav ul li a').click(function(){
+      $('.fa-bars').removeClass('fa-times');
+      $('nav').removeClass('nav-toggle');
+    });
+
+
+    $(window).scroll(function(){
+      if($(window).scrollTop() >= 20){
+        $('header').addClass('active');
+      }else{
+        $('header').removeClass('active');
+      }
+    });
+
+  });
+</script>
+
+</body>
+</html>
